@@ -1,0 +1,19 @@
+{
+    "image": "docker.io/node:18-alpine3.14",
+    "remoteEnv": {
+        "NODE_OPTIONS": "--openssl-legacy-provider"
+    },
+    "runArgs": [
+        "--network=host",
+        "--userns=keep-id"
+    ],
+    "shutdownAction": "stopContainer",
+    "extensions": [
+        "CoenraadS.bracket-pair-colorizer-2",
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "redhat.vscode-xml",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "Vue.volar"
+    ]
+}
