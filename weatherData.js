@@ -4,9 +4,8 @@ const constants = require('./config')
 const weatherData = (address, callback) => {
     const url  = constants.openWeatherMap.BASE_URL + encodeURIComponent(address) + `&appid=` + constants.openWeatherMap.SECRET_KEY
 
-// console.log(url)
 request({url,json:true},(error,{body})=>{
-    console.log("code",body.cod)
+    console.log("code",body.cod + ": " + url)
     if(body.code === 404){
       error(`Can't fetch the data`,undefined)
    
