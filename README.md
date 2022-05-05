@@ -3,7 +3,7 @@ Weather app which calls the openweathermap.org api to retreive the current weath
 
 ![](images/weather_app.png)
 
-## Build Container
+## Build and Run
 Container can be built with:
 ```
 podman build -t ghcr.io/amreshh/weather:0.0.1 .
